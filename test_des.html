@@ -17,7 +17,7 @@
 	<h3>Decrypted value</h3>
 	<p id="decrypted"></p>
 	
-	<script type="text/javascript" src="des.js"></script>
+	<script type="text/javascript" src="./client/des.js"></script>
 	<script type="text/javascript">
 		
 		function DES_encryption() {
@@ -29,7 +29,7 @@
 			// javascript des encryption api
 			var encrypted = javascript_des_encryption(key, message);
 			
-			document.getElementById("encrypted").innerHTML = encrypted;	
+			document.getElementById("message").value = encrypted;	
 
 		}
 		
